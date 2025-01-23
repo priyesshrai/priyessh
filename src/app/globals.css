@@ -1,21 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --light: #ffffff;
+  --foreground: #171717;
+  --dark-bg: #1e1e1e;
+  --dark-font: #111111;
+  --light-dark-bg: #252526;
+  --font-jura: "Jura", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-syne: "Syne", serif;
+  --gradient-dark: rgba(17, 17, 17, 0.8);
+  --gradient-transparent: transparent;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light);
+  background: var(--dark-font);
 }
+
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 43rem;
+  min-height: 100dvh;
+  margin: auto;
+  padding: 6rem 2rem;
+
+  &::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(0 0 0 / 85%), transparent);
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 80%), transparent);
+  }
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+}
+
+.section-wraper {
+  position: relative;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  .my-details {
+    position: relative;
+    flex: 1 1 60%;
+
+    .my-details-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        position: relative;
+        width: 100%;
+        h1 {
+          font-family: "DM Sans", serif;
+          font-size: 3rem;
+          line-height: 1.2;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+      .bio {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        p {
+          font-family: var(--font-syne);
+          font-size: 1.4rem;
+          line-height: 1.2;
+          columns: #e0e0e0;
+        }
+      }
+    }
+  }
+
+  .my-image {
+    position: relative;
+    flex: 0 0 120px;
+    height: 120px;
+    margin: auto;
+
+    .img-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+      }
+    }
+  }
+}
+
+.title-container {
+  position: relative;
+  width: 100%;
+
+  span {
+    font-family: var(--font-raleway);
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+
+.description {
+  position: relative;
+  width: 100%;
+
+  span {
+    font-family: var(--font-syne);
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #dadada;
+  }
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experience {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .experience-block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    .company-details {
+      position: relative;
+      flex: 1;
+      /* border: 1px solid; */
+
+      .company-details-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+
+        .company-logo {
+          position: relative;
+          flex: 0 0 70px;
+          height: 70px;
+          border-radius: 50%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .company-description {
+          position: relative;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          .company-title {
+            position: relative;
+            width: 100%;
+
+            span {
+              font-size: 1.5rem;
+              font-family: var(--font-raleway);
+              font-weight: 700;
+              color: #dadada;
+            }
+          }
+        }
+      }
+    }
+
+    .time {
+      position: relative;
+      flex: 0 0 155px;
+      text-align: right;
+      span {
+        font-family: var(--font-jura);
+        font-size: 13px;
+        color: #dadada;
+        font-weight: 600;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.tx span {
+  font-family: var(--font-syne);
+  font-size: 14px;
+  color: #dadada;
+  line-height: -15px;
+  display: inline-block;
+}
+
+
