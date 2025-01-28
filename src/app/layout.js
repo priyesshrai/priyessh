@@ -3,6 +3,7 @@ import { Syne } from "next/font/google";
 import { ReactLenis } from "lenis/react";
 import { Jura } from "next/font/google";
 import { Raleway } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -30,9 +31,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jura.variable} ${syne.variable} ${raleway.variable} bg-dot-white/[0.1]`}>
+        className={`${jura.variable} ${syne.variable} ${raleway.variable} bg-dot-white/[0.1]`}
+      >
         <main className="main">
-          <ReactLenis root>{children}</ReactLenis>
+          <ReactLenis root>
+            {children}
+            <Analytics />
+          </ReactLenis>
         </main>
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
       </body>
