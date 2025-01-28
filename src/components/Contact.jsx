@@ -1,8 +1,9 @@
+import { IconSend } from '@tabler/icons-react'
 import React from 'react'
 
 export default function Contact() {
     return (
-        <section className='section mt-20 mb-24'>
+        <section className='section mt-20 mb-24' id='contact'>
             <div className="section-wraper">
                 <div className='text-center relative w-full'>
                     <span className='inline-block px-3 py-[2px] text-l bg-white text-[#111111] rounded font-jura font-semibold'>Contact</span>
@@ -32,7 +33,7 @@ export default function Contact() {
                             <textarea placeholder='Messgae' required spellCheck name='message' className='relative w-full bg-transparent px-4 py-3 rounded-lg outline-none border border-transparent font-jura text-xl text-[#dadada] focus:border-yellow-300 focus:border-1 h-40 ' />
                         </div>
                         <div className='flex-1 relative flex justify-center align-middle '>
-                            <button className='w-full px-16 py-3 bg-white text-xl text-black rounded-lg hover:bg-yellow-300 transition-all'>Send</button>
+                            <button className='w-full leading-none px-16 py-3 bg-white text-[20px] text-black rounded-lg flex align-middle justify-center hover:bg-yellow-300 transition-all gap-2'>Send <IconSend className='inline-block w-5' /> </button>
                         </div>
 
                     </div>

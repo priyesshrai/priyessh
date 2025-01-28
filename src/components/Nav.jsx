@@ -6,6 +6,7 @@ import {
     IconBrandLinkedin,
     IconBrandX,
     IconHome,
+    IconMessageChatbot,
 } from "@tabler/icons-react";
 
 export default function Nav() {
@@ -37,6 +38,13 @@ export default function Nav() {
                 <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
             href: "https://github.com/priyesshrai",
+        },
+        {
+            title: "Contact",
+            icon: (
+                <IconMessageChatbot className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            ),
+            href: "#contact",
         },
     ];
     return (
