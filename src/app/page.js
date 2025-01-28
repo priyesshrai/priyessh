@@ -7,10 +7,11 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
 import React from "react";
+import DisableInspectWrapper from "./hooks/DisableInspectWrapper";
 
 export default function Home() {
   return (
-    <>
+    <DisableInspectWrapper>
       <Hero />
       <About/>
       <WorkExperience/>
@@ -19,6 +20,6 @@ export default function Home() {
       <Projects/>
       <Contact/>
       <Nav/>
-    </>
+    </DisableInspectWrapper>
   );
 }
