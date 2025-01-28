@@ -11,7 +11,7 @@ import DisableInspectWrapper from "./hooks/DisableInspectWrapper";
 
 export default function Home() {
   return (
-    <DisableInspectWrapper>
+    <>
       <Hero />
       <About/>
       <WorkExperience/>
@@ -20,6 +20,6 @@ export default function Home() {
       <Projects/>
       <Contact/>
       <Nav/>
-    </DisableInspectWrapper>
+    </>
   );
 }
