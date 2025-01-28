@@ -44,7 +44,7 @@ export default function WorkExperience() {
                         <div className="company-details">
                             <div className="company-details-container">
                                 <div className="company-logo">
-                                    <Image src='/images/company-logo/3.jpg' width={200} height={200} alt='Wizards Next' />
+                                    <Image src='/images/company-logo/3.JPG' width={200} height={200} alt='Wizards Next' />
                                 </div>
                                 <div className="company-description">
                                     <div className="company-title">
