@@ -35,8 +35,7 @@ export default function Contact() {
                 })
                     .then((response) => response.json())
                     .then((data) => {
-                        console.log("Message sent successfully", data);
-                        if (data.status === "success") {
+                        if (data.success) {
                             setContactData({
                                 name: "",
                                 email: "",
