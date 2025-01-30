@@ -18,12 +18,15 @@ export default function WorkExperience() {
                                     <Image src='/images/company-logo/2.jpg' width={200} height={200} alt='Wizards Next' />
                                 </div>
                                 <div className="company-description">
-                                    <div className="company-title">
-                                        <span>
+                                    <div className="company-title flex justify-between align-middle">
+                                        <span className='title-h'>
                                             <LinkPreview url="https://wizards.co.in/">
                                                 Wizards Next LLP
                                             </LinkPreview>
                                         </span>
+                                        <div className="time flex align-middle justify-center">
+                                            <span>June 2024 - Present</span>
+                                        </div>
                                     </div>
                                     <div className="role w-full relative mt-[-6px]">
                                         <span className='text-[#dadada]' style={{ fontFamily: "var(--font-jura)" }}>Full Stack Developer</span>
@@ -35,9 +38,6 @@ export default function WorkExperience() {
                                 </div>
                             </div>
                         </div>
-                        <div className="time">
-                            <span>June 2024 - Present</span>
-                        </div>
                     </div>
 
                     <div className="experience-block mt-10">
@@ -47,12 +47,15 @@ export default function WorkExperience() {
                                     <Image src='/images/company-logo/3.JPG' width={200} height={200} alt='Wizards Next' />
                                 </div>
                                 <div className="company-description">
-                                    <div className="company-title">
-                                        <span>
+                                    <div className="company-title flex align-middle justify-between">
+                                        <span className='title-h'>
                                             <LinkPreview url="http://www.softproindia.in/index.php">
                                                 Softpro India
                                             </LinkPreview>
                                         </span>
+                                        <div className="time flex align-middle justify-center">
+                                            <span>July 2022 - Sept. 2022</span>
+                                        </div>
                                     </div>
                                     <div className="role w-full relative mt-[-6px]">
                                         <span className='text-[#dadada]' style={{ fontFamily: "var(--font-jura)" }}>Java Developer</span>
@@ -63,9 +66,6 @@ export default function WorkExperience() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="time">
-                            <span>July 2022 - Sept. 2022</span>
                         </div>
                     </div>
                 </div>

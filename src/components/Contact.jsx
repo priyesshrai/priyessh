@@ -72,7 +72,7 @@ export default function Contact() {
                     </div>
 
                     <div className='relative w-full text-center text-xl text-slate-300 font-syne'>
-                        <span>"Building innovative solutions, one line of code at a time.
+                        <span  className='sp'>"Building innovative solutions, one line of code at a time.
                             Reach out and let's create something amazing together!"</span>
                     </div>
 

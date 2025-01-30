@@ -14,6 +14,7 @@ export default function Hero() {
                                         src="https://cdn.lordicon.com/ldpyyqjp.json"
                                         trigger="loop"
                                         delay="1500"
+                                        className="hnd"
                                         style={{ width: "60px", height: "60px" }}>
                                     </lord-icon></h1>
                             </div>

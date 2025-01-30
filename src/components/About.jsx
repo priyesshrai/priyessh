@@ -20,12 +20,10 @@ export default function About() {
 
                         </span>
                         <br />
-                        <br />
                         <span>
                             With a Bachelor in Computer Science and Engineering, I specialize in technologies like Java Script, PHP, Java, and C, building scalable and innovative web and app solutions. I’ve gained valuable industry experience through my internship with Softpro India Computer Technologies. Trying to make "Hello World" the new "abc".
                         </span>
 
-                        <br />
                         <br />
                         <span style={{ fontFamily: "var(--font-jura)", fontSize: "1.3rem" }}>Beyond tech, I’m a cricket enthusiast who believes in balancing work with play and finding inspiration both on and off the field.</span>
                     </div>

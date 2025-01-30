@@ -15,7 +15,7 @@ export default function Projects() {
                         <span>My Latest Work</span>
                     </div>
                     <div className='relative w-full text-center text-xl text-slate-300 '>
-                        <span style={{ fontFamily: "var(--font-syne)" }}>I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</span>
+                        <span style={{ fontFamily: "var(--font-syne)" }} className='sp'>I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</span>
                     </div>
 
                     <div className="card relative w-full mt-10">
