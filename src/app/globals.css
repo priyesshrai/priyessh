@@ -338,7 +338,7 @@ body {
     height: 120px;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 395px) {
   .hero .my-details .my-details-container .name h1 {
     font-size: 1.7rem;
     line-height: 1;

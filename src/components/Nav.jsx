@@ -50,7 +50,6 @@ export default function Nav() {
     return (
         (<div className=" fixed bottom-5 left-0 flex items-center justify-center w-full">
             <FloatingDock
-                mobileClassName="translate-y-20"
                 items={links} />
         </div>)
     );
